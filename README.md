@@ -56,8 +56,8 @@ Manual para instalação do Blockscout:
 https://github.com/blockscout/blockscout/tree/master/docker-compose
 
 2-	Acessar arquivo: docker-compose-no-build-geth.yml   dentro do diretório Blockscout\Docker-compose 
-3-	Alterar as variáveis passando o endpont da supernet e a privatkey conforme abaixo:
-ETHEREUM_JSONRPC_HTTP_URL:  endpoint
+3-	Alterar as variáveis passando o endpoint da supernet e a privat key conforme abaixo:
+ETHEREUM_JSONRPC_HTTP_URL:  passar endpoint
 SECRET_KEY_BASE: 'Privat key'
 4-	Acessar pasta Blockscout\Docker-compose
 5-	Executar comando para subir os containers: docker-compose -f docker-compose-no-build-geth.yml up -d
