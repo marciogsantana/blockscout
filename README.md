@@ -50,3 +50,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution and pull request protoco
 [![License: GPL v3.0](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+## Configuração Supernet Local Geth
+Manual para instalação do Blockscout:
+1-	Baixar repositório: 
+https://github.com/blockscout/blockscout/tree/master/docker-compose
+
+2-	Acessar arquivo: docker-compose-no-build-geth.yml   dentro do diretório Blockscout\Docker-compose 
+3-	Alterar as variáveis passando o endpont da supernet e a privatkey conforme abaixo:
+ETHEREUM_JSONRPC_HTTP_URL:  endpoint
+SECRET_KEY_BASE: 'Privat key'
+4-	Acessar pasta Blockscout\Docker-compose
+5-	Executar comando para subir os containers: docker-compose -f docker-compose-no-build-geth.yml up -d
+6-	Acessar usando: http://localhost:4000/
+ 
